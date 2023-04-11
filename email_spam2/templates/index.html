@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Email Spam Detector</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Email Spam Detector</h1>
+    <p>Enter an email below to check if it's spam or not.</p>
+    <form method="POST" action="{{ url_for('predict') }}">
+        <input type="text" name="email" placeholder="Enter email" required>
+        <button type="submit">Check Spam</button>
+    </form>
+</body>
+</html>
+
